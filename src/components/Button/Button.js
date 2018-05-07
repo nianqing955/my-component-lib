@@ -87,19 +87,6 @@ export default class Button extends (PureComponent || Component) {
         );
     }
 
-    // renderDiv(classNames) {
-    //     const Node = this.props.component || 'div';
-    //     return (
-    //       <Node
-    //         className={classNames}
-    //       >
-    //           <div className={`gat-button-wrapper`}>
-    //               {this.props.children}
-    //           </div>
-    //       </Node>
-    //     );
-    // }
-
     render() {
         let renderer =
             this.props.href || this.props.target ? 'renderLink' : 'renderButton';

@@ -3,12 +3,12 @@ const webpack = require('webpack');
 const createAlias = require('./createAlias');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './components/index.js',
 
     output: {
         path: path.resolve(__dirname, 'lib'),
-        filename: 'gatling-ui-umd.js',
-        library: 'gatling',
+        filename: 'mobile-ui-umd.js',
+        library: 'mobileC',
         libraryTarget: 'umd',
         umdNamedDefine: true
     },
@@ -41,7 +41,7 @@ module.exports = {
     ],
 
     resolve: {
-        alias: createAlias(path.resolve(__dirname, './src'))
+        alias: createAlias(path.resolve(__dirname, './components'))
     },
 
     plugins: [
